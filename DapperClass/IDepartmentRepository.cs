@@ -5,6 +5,9 @@ namespace DapperClass
 {
     public interface IDepartmentRepository
     {
-        IEnumerable<Department> GetAllDepartments();
+        public IEnumerable<Department> GetAllDepartments();
+        public void InsertDepartment(string newDepartmentName);
+        public void UpdateDepartment(string updatedName, int id);
+        public void DeleteDepartment(int id);
     }
 }
